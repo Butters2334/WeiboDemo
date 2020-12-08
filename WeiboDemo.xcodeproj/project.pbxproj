@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,8 +16,16 @@
 		4017D858257A172300D0B132 /* CommentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017D857257A172300D0B132 /* CommentTextView.swift */; };
 		4017D85B257A245000D0B132 /* KetboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017D85A257A245000D0B132 /* KetboardResponder.swift */; };
 		401C600B25773B4A0002D9F2 /* RoundedRectangleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401C600A25773B4A0002D9F2 /* RoundedRectangleDemo.swift */; };
+		4023BC62257F700D00758262 /* SimpleImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023BC61257F700D00758262 /* SimpleImageDemo.swift */; };
+		4023BC64257F76AB00758262 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023BC63257F76AB00758262 /* ActivityIndicator.swift */; };
+		4023BC66257F7E4600758262 /* SDImgeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023BC65257F7E4600758262 /* SDImgeDemo.swift */; };
+		4023BC69257F7EFD00758262 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4023BC68257F7EFD00758262 /* SDWebImageSwiftUI */; };
 		403E0C882574D45300923902 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403E0C872574D45300923902 /* HomeView.swift */; };
 		403E0C8A2574D68300923902 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403E0C892574D68300923902 /* UserData.swift */; };
+		40449297257E25C500FA3ED5 /* AlamofireDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40449296257E25C500FA3ED5 /* AlamofireDemo.swift */; };
+		4044929B257E3EB300FA3ED5 /* NetworkManagerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4044929A257E3EB300FA3ED5 /* NetworkManagerDemo.swift */; };
+		4044929E257E3ED800FA3ED5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4044929D257E3ED700FA3ED5 /* NetworkManager.swift */; };
+		40484ADE257F48D300227BFE /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40484ADD257F48D300227BFE /* NetworkAPI.swift */; };
 		4053EDFF256F86ED008F7AD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053EDFE256F86ED008F7AD7 /* AppDelegate.swift */; };
 		4053EE01256F86ED008F7AD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053EE00256F86ED008F7AD7 /* SceneDelegate.swift */; };
 		4053EE03256F86ED008F7AD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053EE02256F86ED008F7AD7 /* ContentView.swift */; };
@@ -132,8 +140,15 @@
 		4017D857257A172300D0B132 /* CommentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextView.swift; sourceTree = "<group>"; };
 		4017D85A257A245000D0B132 /* KetboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetboardResponder.swift; sourceTree = "<group>"; };
 		401C600A25773B4A0002D9F2 /* RoundedRectangleDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleDemo.swift; sourceTree = "<group>"; };
+		4023BC61257F700D00758262 /* SimpleImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleImageDemo.swift; sourceTree = "<group>"; };
+		4023BC63257F76AB00758262 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		4023BC65257F7E4600758262 /* SDImgeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDImgeDemo.swift; sourceTree = "<group>"; };
 		403E0C872574D45300923902 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		403E0C892574D68300923902 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		40449296257E25C500FA3ED5 /* AlamofireDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDemo.swift; sourceTree = "<group>"; };
+		4044929A257E3EB300FA3ED5 /* NetworkManagerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerDemo.swift; sourceTree = "<group>"; };
+		4044929D257E3ED700FA3ED5 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		40484ADD257F48D300227BFE /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
 		4053EDFB256F86ED008F7AD7 /* WeiboDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiboDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4053EDFE256F86ED008F7AD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4053EE00256F86ED008F7AD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -247,6 +262,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4023BC69257F7EFD00758262 /* SDWebImageSwiftUI in Frameworks */,
 				3F351B7E59C7D896CB04582F /* Pods_WeiboDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,13 +276,14 @@
 				08334EEE2A23D4DDE91B4DCF /* Pods-WeiboDemo.debug.xcconfig */,
 				D018FDFB8CDA2879A3CC579D /* Pods-WeiboDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		4017D85225788FB200D0B132 /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				40E2FF702574E1EC00D9F164 /* HScrollViewController.swift */,
+				4023BC63257F76AB00758262 /* ActivityIndicator.swift */,
 				4017D85325788FC100D0B132 /* ViewExtension.swift */,
 			);
 			path = extension;
@@ -285,6 +302,8 @@
 		401C600825773AAB0002D9F2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				4023BC61257F700D00758262 /* SimpleImageDemo.swift */,
+				4023BC65257F7E4600758262 /* SDImgeDemo.swift */,
 				40E2FF722574F3A600D9F164 /* PageViewDemo.swift */,
 				40C5E2902570E7CD00791A9B /* ShapeDemo.swift */,
 				401C600A25773B4A0002D9F2 /* RoundedRectangleDemo.swift */,
@@ -292,6 +311,8 @@
 				4017D84E257882A100D0B132 /* StateDemo.swift */,
 				4017D850257888DA00D0B132 /* BindingDemo.swift */,
 				405B26A5257DCC5800E405D2 /* URLSessionDemo.swift */,
+				40449296257E25C500FA3ED5 /* AlamofireDemo.swift */,
+				4044929A257E3EB300FA3ED5 /* NetworkManagerDemo.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -319,6 +340,15 @@
 			path = Post;
 			sourceTree = "<group>";
 		};
+		4044929C257E3ED700FA3ED5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				40484ADD257F48D300227BFE /* NetworkAPI.swift */,
+				4044929D257E3ED700FA3ED5 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		4053EDF2256F86ED008F7AD7 = {
 			isa = PBXGroup;
 			children = (
@@ -340,15 +370,15 @@
 		4053EDFD256F86ED008F7AD7 /* WeiboDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4044929C257E3ED700FA3ED5 /* Network */,
+				401C600825773AAB0002D9F2 /* Demo */,
 				4017D859257A243200D0B132 /* Comment */,
 				4017D85225788FB200D0B132 /* extension */,
 				408D1F0225778A0300473D11 /* Data */,
 				401C600F257766860002D9F2 /* Post */,
 				401C600925773AC20002D9F2 /* App */,
-				40E2FF702574E1EC00D9F164 /* HScrollViewController.swift */,
 				40A31AB725748D0600E35F4B /* HomeNavigationBar.swift */,
 				403E0C872574D45300923902 /* HomeView.swift */,
-				401C600825773AAB0002D9F2 /* Demo */,
 				4089DDDC256F9C2B005A66D1 /* Resources */,
 				4053EE04256F86EF008F7AD7 /* Assets.xcassets */,
 				4053EE09256F86EF008F7AD7 /* LaunchScreen.storyboard */,
@@ -492,6 +522,9 @@
 			dependencies = (
 			);
 			name = WeiboDemo;
+			packageProductDependencies = (
+				4023BC68257F7EFD00758262 /* SDWebImageSwiftUI */,
+			);
 			productName = WeiboDemo;
 			productReference = 4053EDFB256F86ED008F7AD7 /* WeiboDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -520,6 +553,9 @@
 				Base,
 			);
 			mainGroup = 4053EDF2256F86ED008F7AD7;
+			packageReferences = (
+				4023BC67257F7EFC00758262 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 4053EDFC256F86ED008F7AD7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -677,14 +713,19 @@
 				4053EDFF256F86ED008F7AD7 /* AppDelegate.swift in Sources */,
 				4017D851257888DA00D0B132 /* BindingDemo.swift in Sources */,
 				4017D84F257882A100D0B132 /* StateDemo.swift in Sources */,
+				4044929B257E3EB300FA3ED5 /* NetworkManagerDemo.swift in Sources */,
+				4023BC62257F700D00758262 /* SimpleImageDemo.swift in Sources */,
 				403E0C8A2574D68300923902 /* UserData.swift in Sources */,
 				403E0C882574D45300923902 /* HomeView.swift in Sources */,
+				40484ADE257F48D300227BFE /* NetworkAPI.swift in Sources */,
+				4023BC66257F7E4600758262 /* SDImgeDemo.swift in Sources */,
 				4053EE01256F86ED008F7AD7 /* SceneDelegate.swift in Sources */,
 				4017D858257A172300D0B132 /* CommentTextView.swift in Sources */,
 				4089DE86256FB393005A66D1 /* PostListView.swift in Sources */,
 				40C5E2932570F8EB00791A9B /* PostImageCell.swift in Sources */,
 				4053EE03256F86ED008F7AD7 /* ContentView.swift in Sources */,
 				40E2FF732574F3A600D9F164 /* PageViewDemo.swift in Sources */,
+				4044929E257E3ED800FA3ED5 /* NetworkManager.swift in Sources */,
 				4089DDDB256F9A08005A66D1 /* Post.swift in Sources */,
 				4089DDD9256F94C9005A66D1 /* PostVipBadge.swift in Sources */,
 				40C5E2952571015700791A9B /* PostDeatilView.swift in Sources */,
@@ -692,6 +733,8 @@
 				4017D85B257A245000D0B132 /* KetboardResponder.swift in Sources */,
 				4017D85425788FC100D0B132 /* ViewExtension.swift in Sources */,
 				4017D856257A13B400D0B132 /* CommentInputView.swift in Sources */,
+				40449297257E25C500FA3ED5 /* AlamofireDemo.swift in Sources */,
+				4023BC64257F76AB00758262 /* ActivityIndicator.swift in Sources */,
 				405B26A6257DCC5800E405D2 /* URLSessionDemo.swift in Sources */,
 				401C600B25773B4A0002D9F2 /* RoundedRectangleDemo.swift in Sources */,
 				4017D84D2577A00400D0B132 /* CombineDemo.swift in Sources */,
@@ -895,6 +938,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4023BC67257F7EFC00758262 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4023BC68257F7EFD00758262 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4023BC67257F7EFC00758262 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4053EDF3256F86ED008F7AD7 /* Project object */;
 }
