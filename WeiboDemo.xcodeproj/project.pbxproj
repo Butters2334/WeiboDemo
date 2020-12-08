@@ -20,6 +20,7 @@
 		4023BC64257F76AB00758262 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023BC63257F76AB00758262 /* ActivityIndicator.swift */; };
 		4023BC66257F7E4600758262 /* SDImgeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023BC65257F7E4600758262 /* SDImgeDemo.swift */; };
 		4023BC69257F7EFD00758262 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4023BC68257F7EFD00758262 /* SDWebImageSwiftUI */; };
+		4023BC6C257F82AF00758262 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 4023BC6B257F82AF00758262 /* SwiftyJSON */; };
 		403E0C882574D45300923902 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403E0C872574D45300923902 /* HomeView.swift */; };
 		403E0C8A2574D68300923902 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403E0C892574D68300923902 /* UserData.swift */; };
 		40449297257E25C500FA3ED5 /* AlamofireDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40449296257E25C500FA3ED5 /* AlamofireDemo.swift */; };
@@ -262,6 +263,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4023BC6C257F82AF00758262 /* SwiftyJSON in Frameworks */,
 				4023BC69257F7EFD00758262 /* SDWebImageSwiftUI in Frameworks */,
 				3F351B7E59C7D896CB04582F /* Pods_WeiboDemo.framework in Frameworks */,
 			);
@@ -524,6 +526,7 @@
 			name = WeiboDemo;
 			packageProductDependencies = (
 				4023BC68257F7EFD00758262 /* SDWebImageSwiftUI */,
+				4023BC6B257F82AF00758262 /* SwiftyJSON */,
 			);
 			productName = WeiboDemo;
 			productReference = 4053EDFB256F86ED008F7AD7 /* WeiboDemo.app */;
@@ -555,6 +558,7 @@
 			mainGroup = 4053EDF2256F86ED008F7AD7;
 			packageReferences = (
 				4023BC67257F7EFC00758262 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				4023BC6A257F82AF00758262 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 4053EDFC256F86ED008F7AD7 /* Products */;
 			projectDirPath = "";
@@ -948,6 +952,14 @@
 				minimumVersion = 1.5.0;
 			};
 		};
+		4023BC6A257F82AF00758262 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -955,6 +967,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4023BC67257F7EFC00758262 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		4023BC6B257F82AF00758262 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4023BC6A257F82AF00758262 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
