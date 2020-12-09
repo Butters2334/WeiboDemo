@@ -21,6 +21,8 @@
 		4023BC66257F7E4600758262 /* SDImgeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023BC65257F7E4600758262 /* SDImgeDemo.swift */; };
 		4023BC69257F7EFD00758262 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4023BC68257F7EFD00758262 /* SDWebImageSwiftUI */; };
 		4023BC6C257F82AF00758262 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 4023BC6B257F82AF00758262 /* SwiftyJSON */; };
+		4023BC6F25806B3900758262 /* BBSwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4023BC6E25806B3900758262 /* BBSwiftUIKit */; };
+		4023BC732580720C00758262 /* RefreshDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023BC722580720C00758262 /* RefreshDemo.swift */; };
 		403E0C882574D45300923902 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403E0C872574D45300923902 /* HomeView.swift */; };
 		403E0C8A2574D68300923902 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403E0C892574D68300923902 /* UserData.swift */; };
 		40449297257E25C500FA3ED5 /* AlamofireDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40449296257E25C500FA3ED5 /* AlamofireDemo.swift */; };
@@ -144,6 +146,7 @@
 		4023BC61257F700D00758262 /* SimpleImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleImageDemo.swift; sourceTree = "<group>"; };
 		4023BC63257F76AB00758262 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		4023BC65257F7E4600758262 /* SDImgeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDImgeDemo.swift; sourceTree = "<group>"; };
+		4023BC722580720C00758262 /* RefreshDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshDemo.swift; sourceTree = "<group>"; };
 		403E0C872574D45300923902 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		403E0C892574D68300923902 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		40449296257E25C500FA3ED5 /* AlamofireDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDemo.swift; sourceTree = "<group>"; };
@@ -266,6 +269,7 @@
 				4023BC6C257F82AF00758262 /* SwiftyJSON in Frameworks */,
 				4023BC69257F7EFD00758262 /* SDWebImageSwiftUI in Frameworks */,
 				3F351B7E59C7D896CB04582F /* Pods_WeiboDemo.framework in Frameworks */,
+				4023BC6F25806B3900758262 /* BBSwiftUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +319,7 @@
 				405B26A5257DCC5800E405D2 /* URLSessionDemo.swift */,
 				40449296257E25C500FA3ED5 /* AlamofireDemo.swift */,
 				4044929A257E3EB300FA3ED5 /* NetworkManagerDemo.swift */,
+				4023BC722580720C00758262 /* RefreshDemo.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -527,6 +532,7 @@
 			packageProductDependencies = (
 				4023BC68257F7EFD00758262 /* SDWebImageSwiftUI */,
 				4023BC6B257F82AF00758262 /* SwiftyJSON */,
+				4023BC6E25806B3900758262 /* BBSwiftUIKit */,
 			);
 			productName = WeiboDemo;
 			productReference = 4053EDFB256F86ED008F7AD7 /* WeiboDemo.app */;
@@ -559,6 +565,7 @@
 			packageReferences = (
 				4023BC67257F7EFC00758262 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				4023BC6A257F82AF00758262 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				4023BC6D25806B3900758262 /* XCRemoteSwiftPackageReference "BBSwiftUIKit" */,
 			);
 			productRefGroup = 4053EDFC256F86ED008F7AD7 /* Products */;
 			projectDirPath = "";
@@ -740,6 +747,7 @@
 				40449297257E25C500FA3ED5 /* AlamofireDemo.swift in Sources */,
 				4023BC64257F76AB00758262 /* ActivityIndicator.swift in Sources */,
 				405B26A6257DCC5800E405D2 /* URLSessionDemo.swift in Sources */,
+				4023BC732580720C00758262 /* RefreshDemo.swift in Sources */,
 				401C600B25773B4A0002D9F2 /* RoundedRectangleDemo.swift in Sources */,
 				4017D84D2577A00400D0B132 /* CombineDemo.swift in Sources */,
 				4053EE13256F8A18008F7AD7 /* PostCell.swift in Sources */,
@@ -960,6 +968,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		4023BC6D25806B3900758262 /* XCRemoteSwiftPackageReference "BBSwiftUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Silence-GitHub/BBSwiftUIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -972,6 +988,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4023BC6A257F82AF00758262 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		4023BC6E25806B3900758262 /* BBSwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4023BC6D25806B3900758262 /* XCRemoteSwiftPackageReference "BBSwiftUIKit" */;
+			productName = BBSwiftUIKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

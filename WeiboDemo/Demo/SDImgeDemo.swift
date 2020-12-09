@@ -7,60 +7,39 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct SDImgeDemo: View {
-    let url : URL?
-    @State private var data: Data?
-    private var image: UIImage? {
-        if let data = self.data {
-            return UIImage(data: data)
-        }
-        return nil
-    }
+    @State private var url : URL?
     @State private var loading:Bool = false
+    @State private var state : String = ""
     var body: some View {
-        let image = self.image
         return VStack{
-            Group {
-                if image != nil {
-                    Image(uiImage: image!)
-                        .resizable()
-                        .scaledToFill()
-                        .clipped()
-                }else{
-                    Color.gray
-                }
-            }
-            .frame(height:300)
-            .overlay(
-                ActivityIndicator(isAnimating: $loading, style: .large)
-                    .foregroundColor(.red)
-            )
+            WebImage(url: url,isAnimating:$loading)
+                .placeholder{ Color.gray }
+                .resizable()
+                .onSuccess(perform: { _ in
+                    self.state = "success"
+//                    SDWebImageManager.shared.imageCache.clear(with: .all) {}
+                })
+                .onFailure(perform: { _ in
+                    self.state = "failure"
+                })
+                .scaledToFill()
+                .clipped()
+                .frame(height:300)
             Button(action: {
-                if let url = self.url{
-                    DispatchQueue.global().async {
-                        DispatchQueue.main.async {
-                            self.loading = true
-                            self.data = Data()
-                        }
-                        guard let data = try? Data(contentsOf: url) else{
-                            return
-                        }
-                        DispatchQueue.main.async {
-                            self.loading = false
-                            self.data = data
-                        }
-                    }
-                }
+                self.url = self.url != nil ? nil : URL(string: "https://raw.githubusercontent.com/anmac/WeiboDemo/master/WeiboDemo/Resources/4e7f0c83gy1gam2misv31j21hc0u016k.jpg")
             }) {
-                Text("down image")
-            }//.onAppear(perform: T##(() -> Void)?##(() -> Void)?##() -> Void)
+                Text("down SDImage")
+            }
+            Text("state = \(state)")
         }
     }
 }
 
 struct SDImgeDemo_Previews: PreviewProvider {
     static var previews: some View {
-        SDImgeDemo(url: URL(string: "https://raw.githubusercontent.com/anmac/WeiboDemo/master/WeiboDemo/Resources/4e7f0c83gy1gam2misv31j21hc0u016k.jpg"))
+        SDImgeDemo()
     }
 }
