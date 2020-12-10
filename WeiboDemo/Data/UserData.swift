@@ -100,7 +100,6 @@ extension UserData {
     }
     func sendRequest(_ category:PostListCategory,completion:@escaping ([Post])->Void){
         let requestBlock: (Result<PostList,Error>)->Void = { result in
-            print("send request")
             self.isLoadingMore = false
             switch result {
             case let .success(postList):
