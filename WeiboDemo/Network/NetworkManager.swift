@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 
-private let NetworkAPIBaseURL = "https://raw.githubusercontent.com/anmac/WeiboDemo/master/WeiboDemo/Resources/"
+let NetworkAPIBaseURL = "https://raw.githubusercontent.com/anmac/WeiboDemo/master/WeiboDemo/Resources/"
 
 //缺少网络模块对外响应
 class NetworkManager {

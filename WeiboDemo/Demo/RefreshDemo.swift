@@ -21,7 +21,7 @@ struct RefreshDemo: View {
                 Text("Text \(i)")
                     .frame(width:100)
                     .padding()
-                    .background(i%2==0 ? Color(UIColor.blue) : Color.blue)
+                    .background(i%2==0 ? Color(UIColor.green) : Color.green)
             }
             .bb_setupRefreshControl {
                 $0.tintColor = .blue

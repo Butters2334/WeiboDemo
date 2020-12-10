@@ -20,6 +20,7 @@ struct PageView : View {
         }
         .frame(width:maxWidth,height: maxHeight)
 //        .tabViewStyle(PageTabViewStyle())//iOS14 SwiftUI2.0
+        
     }
 }
 

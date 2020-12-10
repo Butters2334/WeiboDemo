@@ -70,6 +70,6 @@ struct CommentInputView: View {
 
 struct CommentInput_Previews: PreviewProvider {
     static var previews: some View {
-        CommentInputView(post: UserData().recommendPostList.list[0])
+        CommentInputView(post: loadPostListData("PostListData_recommend_1.json").list[0])
     }
 }

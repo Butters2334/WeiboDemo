@@ -20,7 +20,6 @@ struct SDImgeDemo: View {
                 .resizable()
                 .onSuccess(perform: { _ in
                     self.state = "success"
-//                    SDWebImageManager.shared.imageCache.clear(with: .all) {}
                 })
                 .onFailure(perform: { _ in
                     self.state = "failure"
