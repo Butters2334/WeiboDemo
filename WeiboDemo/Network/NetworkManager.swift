@@ -9,9 +9,7 @@
 import Foundation
 import Alamofire
 
-
-let NetworkAPIBaseURL = "https://raw.githubusercontent.com/anmac/WeiboDemo/master/WeiboDemo/Resources/"
-
+let NetworkAPIBaseURL =     "https://raw.githubusercontent.com/Butters2334/Resources/main/WeiboDemo/"
 //缺少网络模块对外响应
 class NetworkManager {
     static let shared = NetworkManager()
@@ -27,7 +25,8 @@ class NetworkManager {
     func requestGet(path:String,
                     parameters:Parameters?,
                     completion:@escaping NMCompletion)->NMRequest{
-        AF.request(NetworkAPIBaseURL + path ,
+//        print(NetworkAPIBaseURL + path )
+        return AF.request(NetworkAPIBaseURL + path ,
                    parameters: parameters ,
                    headers: commonHeaders,
                    requestModifier: {$0.timeoutInterval = 15})

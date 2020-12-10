@@ -66,6 +66,7 @@ func loadPostListData(_ fileName:String)->PostList{
 }
 
 func loadImage(_ name:String)->WebImage{
+//    print(NetworkAPIBaseURL+name)
     return WebImage(url: URL(string:NetworkAPIBaseURL+name))
         .placeholder{ Color.gray }
         .resizable()
