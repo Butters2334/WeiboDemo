@@ -10,8 +10,8 @@ import SwiftUI
 import Combine
 
 class UserData: ObservableObject{
-    @Published var recommendPostList = PostList(list: [])
-    @Published var hotPostList = PostList(list: [])
+    @Published var recommendPostList = loadPostListData("PostListData_recommend_1.json")
+    @Published var hotPostList = loadPostListData("PostListData_hot_1.json")
     @Published var isRefreshing  = false
     @Published var isLoadingMore = false
     @Published var loadingError: Error?

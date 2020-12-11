@@ -47,6 +47,9 @@
 		40C5E2932570F8EB00791A9B /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5E2922570F8EB00791A9B /* PostImageCell.swift */; };
 		40C5E2952571015700791A9B /* PostDeatilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5E2942571015700791A9B /* PostDeatilView.swift */; };
 		40D5BC662580CDF5007C499B /* QueueDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D5BC652580CDF5007C499B /* QueueDemo.swift */; };
+		40D5BC6825830D60007C499B /* TapDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D5BC6725830D60007C499B /* TapDemo.swift */; };
+		40D5BC6B25835ACE007C499B /* PostListData_hot_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 40D5BC6925835ACE007C499B /* PostListData_hot_1.json */; };
+		40D5BC6C25835ACE007C499B /* PostListData_recommend_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 40D5BC6A25835ACE007C499B /* PostListData_recommend_1.json */; };
 		40E2FF712574E1EC00D9F164 /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2FF702574E1EC00D9F164 /* HScrollViewController.swift */; };
 		40E2FF732574F3A600D9F164 /* PageViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2FF722574F3A600D9F164 /* PageViewDemo.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +94,9 @@
 		40C5E2922570F8EB00791A9B /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		40C5E2942571015700791A9B /* PostDeatilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDeatilView.swift; sourceTree = "<group>"; };
 		40D5BC652580CDF5007C499B /* QueueDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueDemo.swift; sourceTree = "<group>"; };
+		40D5BC6725830D60007C499B /* TapDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapDemo.swift; sourceTree = "<group>"; };
+		40D5BC6925835ACE007C499B /* PostListData_hot_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PostListData_hot_1.json; sourceTree = "<group>"; };
+		40D5BC6A25835ACE007C499B /* PostListData_recommend_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PostListData_recommend_1.json; sourceTree = "<group>"; };
 		40E2FF702574E1EC00D9F164 /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
 		40E2FF722574F3A600D9F164 /* PageViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewDemo.swift; sourceTree = "<group>"; };
 		6B027A64A1B6E6A673830366 /* Pods_WeiboDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiboDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +164,7 @@
 				40449296257E25C500FA3ED5 /* AlamofireDemo.swift */,
 				4044929A257E3EB300FA3ED5 /* NetworkManagerDemo.swift */,
 				4023BC722580720C00758262 /* RefreshDemo.swift */,
+				40D5BC6725830D60007C499B /* TapDemo.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -244,6 +251,8 @@
 		4089DDDC256F9C2B005A66D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				40D5BC6925835ACE007C499B /* PostListData_hot_1.json */,
+				40D5BC6A25835ACE007C499B /* PostListData_recommend_1.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -336,7 +345,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4053EE0B256F86EF008F7AD7 /* LaunchScreen.storyboard in Resources */,
+				40D5BC6B25835ACE007C499B /* PostListData_hot_1.json in Resources */,
 				4053EE08256F86EF008F7AD7 /* Preview Assets.xcassets in Resources */,
+				40D5BC6C25835ACE007C499B /* PostListData_recommend_1.json in Resources */,
 				4053EE05256F86EF008F7AD7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +411,7 @@
 				403E0C8A2574D68300923902 /* UserData.swift in Sources */,
 				403E0C882574D45300923902 /* HomeView.swift in Sources */,
 				40484ADE257F48D300227BFE /* NetworkAPI.swift in Sources */,
+				40D5BC6825830D60007C499B /* TapDemo.swift in Sources */,
 				4023BC66257F7E4600758262 /* SDImgeDemo.swift in Sources */,
 				4053EE01256F86ED008F7AD7 /* SceneDelegate.swift in Sources */,
 				4017D858257A172300D0B132 /* CommentTextView.swift in Sources */,
