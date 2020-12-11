@@ -5,3 +5,5 @@
 根据BBCo教程编写出来的WeiboDemo[教程地址](https://www.youtube.com/playlist?list=PLotizAeaV0nPM7a7Yy3Uyh4rkgBvT9N_H)
 
 感兴趣的可以去学学,两天时间就能学会SwiftUI的基本编写和网络相关的基本知识
+
+资源放在github上模拟远程资源,但是github访问不稳定,经常会出现网络错误1004
