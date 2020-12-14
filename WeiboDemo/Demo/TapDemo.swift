@@ -26,12 +26,34 @@ struct TapDemo: View {
             Text("subtitle")
                 .textStyle(.subtitle)
                 .padding(10.0)
-            Image(systemName: "moon.zzz")
-                .frame(width: 100, height: 100)
-                .font(.system(size: 30, weight: .bold))
-            Image(systemName: "sun.max")
-                .frame(width: 100, height: 100)
-                .font(.system(size: 30, weight: .light))
+//            Image(systemName: "moon.zzz")
+//                .frame(width: 100, height: 100)
+//                .font(.system(size: 30, weight: .bold))
+//            Image(systemName: "sun.max")
+//                .frame(width: 100, height: 100)
+//                .font(.system(size: 30, weight: .light))
+//            TextField("", text: .constant(""), onEditingChanged: { (b) in
+//
+//            }) {
+//
+//            }
+//            .textFieldStyle(RoundedBorderTextFieldStyle())
+//                .padding(.leading,30)
+//                .padding(.trailing,100)
+//
+//            SecureField("test", text: .constant(""))
+//            .textFieldStyle(RoundedBorderTextFieldStyle())
+//                .padding(.leading,30)
+//                .padding(.trailing,100)
+            
+            Image("1024")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 200, height: 200, alignment: .center)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.red, lineWidth: 10)
+            )
         }
     }
 }
@@ -103,7 +125,7 @@ struct ColorStyle : ViewModifier {
 extension Text{
     func setColor()->some View{
         self
-            .foregroundColor(.green)
+            .foregroundColor(.green) 
             .background(Color.red)
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
